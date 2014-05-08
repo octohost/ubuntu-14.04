@@ -1,0 +1,42 @@
+{
+    "variables": {
+        "aws_access_key": "",
+        "aws_secret_key": ""
+    },
+
+    "builders": [{
+            "type": "amazon-ebs",
+            "access_key": "{{user `aws_access_key`}}",
+            "secret_key": "{{user `aws_secret_key` }}",
+            "region": "us-west-2",
+            "source_ami": "ami-6ac2a85a",
+            "instance_type": "c3.large",
+            "ssh_username": "ubuntu",
+            "ami_name": "ubuntu 14.04 {{timestamp}}",
+            "ami_regions": [ "us-west-1", "us-east-1" ]
+            },
+            {
+              "type": "digitalocean",
+              "image_id": "1505447",
+              "size_id": "63",
+              "snapshot_name": "ubuntu 12.04 3.8 {{timestamp}}"
+            },
+            {
+              "type": "openstack",
+              "username": "",
+              "password": "",
+              "provider": "",
+              "region": "DFW",
+              "ssh_username": "root",
+              "image_name": "ubuntu 12.04 3.8 {{timestamp}}",
+              "source_image": "23b564c9-c3e6-49f9-bc68-86c7a9ab5018",
+              "flavor": "3"
+            }],
+
+    "provisioners": [{
+            "type": "shell",
+            "scripts": [
+                "scripts/setup.sh"
+            ]
+    }]
+}
