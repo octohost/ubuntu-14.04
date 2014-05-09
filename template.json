@@ -26,10 +26,10 @@
               "username": "",
               "password": "",
               "provider": "",
-              "region": "DFW",
+              "region": "dfw",
               "ssh_username": "root",
-              "image_name": "ubuntu 12.04 3.8 {{timestamp}}",
-              "source_image": "23b564c9-c3e6-49f9-bc68-86c7a9ab5018",
+              "image_name": "ubuntu 14.04 {{timestamp}}",
+              "source_image": "5cc098a5-7286-4b96-b3a2-49f4c4f82537",
               "flavor": "3"
             }],
 
