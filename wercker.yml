@@ -15,7 +15,7 @@ build:
           ./packer version | tee $WERCKER_REPORT_MESSAGE_FILE
     - script:
         name: validate packer template
-        code: ./packer validate template.json | tee $WERCKER_REPORT_MESSAGE_FILE
+        code: ./packer validate -only=amazon-ebs template.json | tee $WERCKER_REPORT_MESSAGE_FILE
     - script:
         name: build image
         code: |
