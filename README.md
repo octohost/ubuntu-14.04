@@ -39,3 +39,5 @@ To build the images - use these Rakefile targets:
     rake build_vagrant    # Build Vagrant box
 
 This template forms the base image for [octohost](http://www.octohost.io).
+
+Wercker build process shamelessley stolen and adjusted from [https://github.com/garethr/packer-serverspec-example](https://github.com/garethr/packer-serverspec-example).
