@@ -1,6 +1,8 @@
 ubuntu-14.04
 =================
 
+[![wercker status](https://app.wercker.com/status/f2b4672ad600e859f9209a67a8b0f5c6/m "wercker status")](https://app.wercker.com/project/bykey/f2b4672ad600e859f9209a67a8b0f5c6)
+
 Packer template for Ubuntu 14.04 image.
 
 These EBS backed AMIs are available in:
