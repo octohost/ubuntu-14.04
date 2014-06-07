@@ -7,9 +7,9 @@ Packer template for Ubuntu 14.04 image.
 
 These EBS backed AMIs are available in:
 
-1. us-west-2: ami-1d34422d
-2. us-west-1: ami-bcb08bf9
-3. us-east-1: ami-7a37d412
+1. us-west-2: ami-31671501
+2. us-west-1: ami-104a4d55
+3. us-east-1: ami-886797e0
 
 You can also build a DigitalOcean Droplet or Rackspace OpenStack Image.
 
