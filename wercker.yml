@@ -23,7 +23,7 @@ build:
           ./packer build -only=amazon-ebs template.json | tee "${WERCKER_REPORT_ARTIFACTS_DIR}/packer_build_output.log"
           tail -n 1 "${WERCKER_REPORT_ARTIFACTS_DIR}/packer_build_output.log" | tee $WERCKER_REPORT_MESSAGE_FILE
   after-steps:
-        - sherzberg/slack-notify:
-            subdomain: $SLACK_SUBDOMAIN
-            token: $SLACK_TOKEN
-            channel: $SLACK_CHANNEL
+        - hipchat-notify:
+            token: $HIPCHAT_TOKEN
+            room-id: 618538
+            from-name: werckerbot
