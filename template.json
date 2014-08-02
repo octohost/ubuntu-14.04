@@ -23,13 +23,12 @@
             },
             {
               "type": "openstack",
-              "username": "",
-              "password": "",
-              "provider": "",
-              "region": "dfw",
+              "provider": "rackspace-us",
+              "openstack_provider": "rackspace",
+              "region": "iad",
               "ssh_username": "root",
               "image_name": "ubuntu 14.04 {{timestamp}}",
-              "source_image": "5cc098a5-7286-4b96-b3a2-49f4c4f82537",
+              "source_image": "ffd597d6-2cc4-4b43-b8f4-b1006715b84e",
               "flavor": "3"
             }],
 
