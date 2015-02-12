@@ -7,13 +7,13 @@ Packer template for Ubuntu 14.04 image.
 
 These EBS SSD backed AMIs are available in:
 
-1. us-west-2: ami-af401e9f
-2. us-east-1: ami-bc6c15d4
-3. us-west-1: ami-faacb2bf
+1. us-east-1: ami-40d49f28
+2. us-west-1: ami-26405a63
+3. us-west-2: ami-895b7fb9
 
 You can also build a DigitalOcean Droplet or Rackspace OpenStack Image.
 
-Ansible and Chef are installed as available provisioning systems.
+Ansible and Chef 11.x are installed as available provisioning systems.
 
 In order to build an Amazon AMI, DigitalOcean Droplet or Rackspace OpenStack image, you will need accounts for each. Export these values to get Packer to honor them automatically:
 
