@@ -37,12 +37,5 @@
             "scripts": [
                 "scripts/setup.sh"
             ]
-    }, {
-    "type": "file",
-    "source": "tests",
-    "destination": "/tmp"
-    }, {
-    "type": "shell",
-    "script": "scripts/serverspec.sh"
-  }]
+    }]
 }
