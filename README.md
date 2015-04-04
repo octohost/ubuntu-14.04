@@ -13,7 +13,7 @@ These EBS SSD backed AMIs are available in:
 
 You can also build a DigitalOcean Droplet or Rackspace OpenStack Image.
 
-Ansible and Chef 11.x are installed as available provisioning systems.
+Chef 12.x is already installed.
 
 In order to build an Amazon AMI, DigitalOcean Droplet or Rackspace OpenStack image, you will need accounts for each. Export these values to get Packer to honor them automatically:
 
