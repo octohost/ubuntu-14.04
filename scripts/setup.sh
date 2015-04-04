@@ -1,8 +1,10 @@
 #!/bin/bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 # Update all packages.
 sudo apt-get update
-sudo apt-get -y upgrade
+sudo apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
